@@ -1,0 +1,44 @@
+.cartBody {
+  margin: 0px 90px 0 150px;
+  /* border: 2px solid gray; */
+  display: flex;
+}
+
+.img-size {
+  height: 250px;
+  background-size: cover;
+
+  /* max-width: 100%; */
+}
+
+/* .card {
+  height: 20px;
+
+} */
+.cardBody {
+  /* height: 80px; */
+  display: flex;
+  padding: 027px 0 92px 64px;
+  /* justify-content: center; */
+  /* for straight view */
+  flex-wrap: wrap;
+  /*  for reverse view */
+  /* flex-wrap: wrap-reverse; */
+  /* content adjust according to page */
+  overflow: auto;
+  align-items: center;
+
+  width: 100vw;
+
+  /* align-items: center; */
+}
+
+.quantity {
+  display: flex;
+  align-items: center;
+}
+
+.quantity-btn {
+  /* padding-right: 5px; */
+  margin-left: 8px;
+}

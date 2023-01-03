@@ -1,0 +1,6 @@
+# dependencies
+/node_modules
+./api-docs
+./College-project.postman_collection
+
+./command.txt

@@ -1,0 +1,43 @@
+.product {
+
+  margin: 30px 100px 14px 120px;
+
+}
+
+.product_logo {
+
+  margin: 33px 56px 49px 100px;
+  display: flex;
+
+
+}
+
+.product_logo_1 {
+  margin: auto;
+  display: flex;
+  
+
+}
+
+.item {
+  border: 1px solid rgb(102, 90, 90);
+
+}
+
+.image {
+  margin-left: 72px;
+  margin-top: 17px;
+  width: 200px;
+  height: 240px;
+
+
+}
+
+h4 {
+  text-align: center;
+  padding: 10px;
+}
+
+
+
+

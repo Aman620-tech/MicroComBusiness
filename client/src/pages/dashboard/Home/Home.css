@@ -1,0 +1,32 @@
+
+.category {
+  background-color: none;
+
+  display: flex;
+  /* for center item  */
+  justify-content: center;
+  /* for straight view */
+  flex-wrap: wrap;
+/*  for reverse view */
+  /* flex-wrap: wrap-reverse; */
+  /* content adjust according to page */
+  overflow: auto;
+  align-items: center;
+  width: 100vw;
+}
+.category-card {
+  margin: 37px 20px 0 6px;
+  /* display: flex;
+  flex-wrap: wrap; */
+}
+
+.category-image {
+  height: 140px;
+  width: 250px;
+  object-fit: cover;
+}
+
+.category-card {
+  width: 320px;
+  height: 270px;
+}

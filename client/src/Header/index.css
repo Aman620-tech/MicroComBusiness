@@ -1,0 +1,16 @@
+.login {
+  /* position: fixed; */
+  /* text-align: right; */
+  align-self: right;
+}
+.navbar_icon {
+  /* align-items: ;
+ */
+  float: right;
+}
+
+.slight_left {
+  /* position: relative; */
+  /* align-items: right; */
+  float: right;
+}

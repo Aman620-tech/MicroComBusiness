@@ -1,0 +1,23 @@
+.products {
+  margin-top: 20px;
+  margin-left: 40px;
+  display: flex;
+
+  flex-wrap: wrap;
+ 
+  overflow: auto;
+  align-items: center;
+  width: 100vw;
+}
+.products-item {
+  padding: 30px;
+  display: flex;
+}
+img {
+  object-fit: cover;
+
+}
+
+.products {
+  padding: 2%;
+}

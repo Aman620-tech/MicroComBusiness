@@ -1,0 +1,15 @@
+.page_size {
+  /* margin-top: 200px;
+  margin-left: 100 px; */
+  /* padding-left: 20%; */
+  padding: 20px 100px 32px 270px;
+}
+
+.form_group {
+  display: flex;
+  padding: 0px 0px 0px 0px;
+}
+
+.form_field {
+  padding: 18px 133px 46px 65px;
+}

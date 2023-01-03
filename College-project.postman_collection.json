@@ -1,0 +1,2821 @@
+{
+	"info": {
+		"_postman_id": "c872f111-5d49-4b07-a72a-7c9faca9bd1f",
+		"name": "College-project",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19258202"
+	},
+	"item": [
+		{
+			"name": "admin",
+			"item": [
+				{
+					"name": "user",
+					"item": [
+						{
+							"name": "all-user",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzN2NlMmRhMzgyMjM5MTk3NTBhNGI2NiIsImlhdCI6MTY2OTE4MTE2NH0.YI0cOvQV6auBvIOcRguJkKTPyYdJBQD4dT2Vp8UP9VQ",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:3004/api/admin/all-user",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3004",
+									"path": [
+										"api",
+										"admin",
+										"all-user"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "all-Business user",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzN2NlMmRhMzgyMjM5MTk3NTBhNGI2NiIsImlhdCI6MTY2OTE4MTE2NH0.YI0cOvQV6auBvIOcRguJkKTPyYdJBQD4dT2Vp8UP9VQ",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:3004/api/admin/all-business-user",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3004",
+									"path": [
+										"api",
+										"admin",
+										"all-business-user"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "single-user",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzNzhiNjcwMDk0OWMzZmZhYTkwYjYyNiIsImlhdCI6MTY2ODg1NjAyN30.78TiWekwwvIQWKgA6vLDOlj1MV2Qlj6iPuM-i-NPIcA\n",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:3004/api/admin/single-user/635594d204cf95e469c6f232",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3004",
+									"path": [
+										"api",
+										"admin",
+										"single-user",
+										"635594d204cf95e469c6f232"
+									],
+									"query": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzNTQ0NzMyMjlkNTI3M2IzYWYxNWQ5ZiIsImlhdCI6MTY2NjU0OTkwOH0.2F0kIDyZ08Oqj5VHf0uAqXmAwBVWvCLSwSI0qaw9ejk",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "status-change",
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzNzhiNjcwMDk0OWMzZmZhYTkwYjYyNiIsImlhdCI6MTY2ODg1NjAyN30.78TiWekwwvIQWKgA6vLDOlj1MV2Qlj6iPuM-i-NPIcA\n",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"isActive\":false\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3004/api/admin/user-status/635594d204cf95e469c6f232",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3004",
+									"path": [
+										"api",
+										"admin",
+										"user-status",
+										"635594d204cf95e469c6f232"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "shop",
+					"item": [
+						{
+							"name": "all-shops",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzNzhiNjcwMDk0OWMzZmZhYTkwYjYyNiIsImlhdCI6MTY2ODg1NjAyN30.78TiWekwwvIQWKgA6vLDOlj1MV2Qlj6iPuM-i-NPIcA\n",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3004/api/admin/all-shop",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3004",
+									"path": [
+										"api",
+										"admin",
+										"all-shop"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "single-shop",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzNzhiNjcwMDk0OWMzZmZhYTkwYjYyNiIsImlhdCI6MTY2ODg1NjAyN30.78TiWekwwvIQWKgA6vLDOlj1MV2Qlj6iPuM-i-NPIcA\n",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:3004/api/admin/shop/636689e3a9d4c57bee12e3ca",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3004",
+									"path": [
+										"api",
+										"admin",
+										"shop",
+										"636689e3a9d4c57bee12e3ca"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "shop-count",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzNzhiNjcwMDk0OWMzZmZhYTkwYjYyNiIsImlhdCI6MTY2ODg1NjAyN30.78TiWekwwvIQWKgA6vLDOlj1MV2Qlj6iPuM-i-NPIcA\n",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:3004/api/admin/shop-count",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3004",
+									"path": [
+										"api",
+										"admin",
+										"shop-count"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "shop-status-change",
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzNzhiNjcwMDk0OWMzZmZhYTkwYjYyNiIsImlhdCI6MTY2ODg1NjAyN30.78TiWekwwvIQWKgA6vLDOlj1MV2Qlj6iPuM-i-NPIcA\n",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"isActive\":true\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3004/api/admin/shop-status/636689e3a9d4c57bee12e3ca",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3004",
+									"path": [
+										"api",
+										"admin",
+										"shop-status",
+										"636689e3a9d4c57bee12e3ca"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "delivery",
+					"item": [
+						{
+							"name": "single-delivery",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzNzhiNjcwMDk0OWMzZmZhYTkwYjYyNiIsImlhdCI6MTY2ODg1NjAyN30.78TiWekwwvIQWKgA6vLDOlj1MV2Qlj6iPuM-i-NPIcA\n",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:3004/api/admin/delivery/636689e3a9d4c57bee12e3ca",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3004",
+									"path": [
+										"api",
+										"admin",
+										"delivery",
+										"636689e3a9d4c57bee12e3ca"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "single-delivery Copy",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzNzhiNjcwMDk0OWMzZmZhYTkwYjYyNiIsImlhdCI6MTY2ODg1NjAyN30.78TiWekwwvIQWKgA6vLDOlj1MV2Qlj6iPuM-i-NPIcA\n",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:3004/api/admin/all-delivery",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3004",
+									"path": [
+										"api",
+										"admin",
+										"all-delivery"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delivery -Compnay-count",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzNzhiNjcwMDk0OWMzZmZhYTkwYjYyNiIsImlhdCI6MTY2ODg1NjAyN30.78TiWekwwvIQWKgA6vLDOlj1MV2Qlj6iPuM-i-NPIcA\n",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:3004/api/admin/delivery-count",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3004",
+									"path": [
+										"api",
+										"admin",
+										"delivery-count"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delivery-status-change",
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzNzhiNjcwMDk0OWMzZmZhYTkwYjYyNiIsImlhdCI6MTY2ODg1NjAyN30.78TiWekwwvIQWKgA6vLDOlj1MV2Qlj6iPuM-i-NPIcA\n",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"isActive\":true\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3004/api/admin/delivery-status/6370c9381d2563c127af9f07",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3004",
+									"path": [
+										"api",
+										"admin",
+										"delivery-status",
+										"6370c9381d2563c127af9f07"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "category",
+					"item": [
+						{
+							"name": "create-category",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzN2NlMmRhMzgyMjM5MTk3NTBhNGI2NiIsImlhdCI6MTY2OTE4MTE2NH0.YI0cOvQV6auBvIOcRguJkKTPyYdJBQD4dT2Vp8UP9VQ",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "categoryName",
+											"value": "Books",
+											"type": "text"
+										},
+										{
+											"key": "categoryImage",
+											"type": "file",
+											"src": "/C:/Users/pande/Downloads/tom-hermans-9BoqXzEeQqM-unsplash.jpg"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:3004/api/admin/category-create",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3004",
+									"path": [
+										"api",
+										"admin",
+										"category-create"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "all-category",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzN2NlMmRhMzgyMjM5MTk3NTBhNGI2NiIsImlhdCI6MTY2OTczMjA5OX0.toQhwvsjlLEuogCUSZFT54FtKANwGtadviRv4dkZNts",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "categoryName",
+											"value": "Home",
+											"type": "text"
+										},
+										{
+											"key": "categoryImage",
+											"type": "file",
+											"src": "/C:/Users/pande/Downloads/Home.jpg"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:3004/api/admin/all-category",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3004",
+									"path": [
+										"api",
+										"admin",
+										"all-category"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "single-category-view",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzNzhiNjcwMDk0OWMzZmZhYTkwYjYyNiIsImlhdCI6MTY2ODg1NjAyN30.78TiWekwwvIQWKgA6vLDOlj1MV2Qlj6iPuM-i-NPIcA",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "categoryName",
+											"value": "Home",
+											"type": "text"
+										},
+										{
+											"key": "categoryImage",
+											"type": "file",
+											"src": "/C:/Users/pande/Downloads/kam-idris-_HqHX3LBN18-unsplash.jpg"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:3004/api/admin/category/6361728d11deff709cca93fa",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3004",
+									"path": [
+										"api",
+										"admin",
+										"category",
+										"6361728d11deff709cca93fa"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "update category",
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzN2NlMmRhMzgyMjM5MTk3NTBhNGI2NiIsImlhdCI6MTY2OTczMjA5OX0.toQhwvsjlLEuogCUSZFT54FtKANwGtadviRv4dkZNts",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "categoryName",
+											"value": "Clothes",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "categoryImage",
+											"type": "file",
+											"src": "/C:/Users/pande/Downloads/kam-idris-_HqHX3LBN18-unsplash.jpg",
+											"disabled": true
+										},
+										{
+											"key": "active",
+											"value": "false",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:3004/api/admin/update-category/638247707c4d100567eb4084",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3004",
+									"path": [
+										"api",
+										"admin",
+										"update-category",
+										"638247707c4d100567eb4084"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Status change",
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzN2NlMmRhMzgyMjM5MTk3NTBhNGI2NiIsImlhdCI6MTY2OTczMjA5OX0.toQhwvsjlLEuogCUSZFT54FtKANwGtadviRv4dkZNts",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "categoryName",
+											"value": "Clothes",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "categoryImage",
+											"type": "file",
+											"src": "/C:/Users/pande/Downloads/kam-idris-_HqHX3LBN18-unsplash.jpg",
+											"disabled": true
+										},
+										{
+											"key": "active",
+											"value": "false",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:3004/api/admin/update-category/638247707c4d100567eb4084",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3004",
+									"path": [
+										"api",
+										"admin",
+										"update-category",
+										"638247707c4d100567eb4084"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete category",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzNTQ0NzMyMjlkNTI3M2IzYWYxNWQ5ZiIsImlhdCI6MTY2NzMyOTU4M30.csKFHoQPVRKCLfi689dF6DowsC2WDsM0jVatPzMS-h4",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "categoryName",
+											"value": "Home",
+											"type": "text"
+										},
+										{
+											"key": "categoryImage",
+											"type": "file",
+											"src": "/C:/Users/pande/Downloads/kam-idris-_HqHX3LBN18-unsplash.jpg"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:3004/api/admin/delete-category/636fe3f1ceb9420e7c70f90f",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3004",
+									"path": [
+										"api",
+										"admin",
+										"delete-category",
+										"636fe3f1ceb9420e7c70f90f"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Owner",
+					"item": [
+						{
+							"name": "all-owner",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzNzhiNjcwMDk0OWMzZmZhYTkwYjYyNiIsImlhdCI6MTY2ODg1NjAyN30.78TiWekwwvIQWKgA6vLDOlj1MV2Qlj6iPuM-i-NPIcA",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:3004/api/admin/all-owner",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3004",
+									"path": [
+										"api",
+										"admin",
+										"all-owner"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "owner-single",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzNTQ0NzMyMjlkNTI3M2IzYWYxNWQ5ZiIsImlhdCI6MTY2NzY2Nzg0M30.J0H5SjBbiNFmkvQVPRxfWQ7G1uIgo1hZytMgDPxzheE",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:3004/api/admin/owner/63650c5bde30e181d5ac481b",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3004",
+									"path": [
+										"api",
+										"admin",
+										"owner",
+										"63650c5bde30e181d5ac481b"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "owner-count",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzNzhiNjcwMDk0OWMzZmZhYTkwYjYyNiIsImlhdCI6MTY2ODg1NjAyN30.78TiWekwwvIQWKgA6vLDOlj1MV2Qlj6iPuM-i-NPIcA",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:3004/api/admin/owner-count",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3004",
+									"path": [
+										"api",
+										"admin",
+										"owner-count"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "block-user",
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzNzhiNjcwMDk0OWMzZmZhYTkwYjYyNiIsImlhdCI6MTY2ODg1NjAyN30.78TiWekwwvIQWKgA6vLDOlj1MV2Qlj6iPuM-i-NPIcA",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"isActive\":true\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3004/api/admin/owner-status/63650c5bde30e181d5ac481b",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3004",
+									"path": [
+										"api",
+										"admin",
+										"owner-status",
+										"63650c5bde30e181d5ac481b"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "sub-category",
+					"item": [
+						{
+							"name": "all-category Copy",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzNzhiNjcwMDk0OWMzZmZhYTkwYjYyNiIsImlhdCI6MTY2ODg1NjAyN30.78TiWekwwvIQWKgA6vLDOlj1MV2Qlj6iPuM-i-NPIcA",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "categoryName",
+											"value": "Home",
+											"type": "text"
+										},
+										{
+											"key": "categoryImage",
+											"type": "file",
+											"src": "/C:/Users/pande/Downloads/Home.jpg"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:3004/api/admin/all-sub-category",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3004",
+									"path": [
+										"api",
+										"admin",
+										"all-sub-category"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "all-category Copy 2",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzNzhiNjcwMDk0OWMzZmZhYTkwYjYyNiIsImlhdCI6MTY2ODg1NjAyN30.78TiWekwwvIQWKgA6vLDOlj1MV2Qlj6iPuM-i-NPIcA",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "subcategoryName",
+											"value": "kurta",
+											"type": "text"
+										},
+										{
+											"key": "subcategoryImage",
+											"type": "file",
+											"src": "/C:/Users/pande/Downloads/kurta.jpg"
+										},
+										{
+											"key": "categoryId",
+											"value": "636170c2d5be7a47fb11df66",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:3004/api/admin/sub-category-create",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3004",
+									"path": [
+										"api",
+										"admin",
+										"sub-category-create"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "single-subcategory-view",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzNzhiNjcwMDk0OWMzZmZhYTkwYjYyNiIsImlhdCI6MTY2ODg1NjAyN30.78TiWekwwvIQWKgA6vLDOlj1MV2Qlj6iPuM-i-NPIcA",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "categoryName",
+											"value": "Home",
+											"type": "text"
+										},
+										{
+											"key": "categoryImage",
+											"type": "file",
+											"src": "/C:/Users/pande/Downloads/Home.jpg"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:3004/api/admin/sub-category/636a9ca2f4f9558fd791cc93",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3004",
+									"path": [
+										"api",
+										"admin",
+										"sub-category",
+										"636a9ca2f4f9558fd791cc93"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "single-subcategory-view Copy",
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzNzhiNjcwMDk0OWMzZmZhYTkwYjYyNiIsImlhdCI6MTY2ODg1NjAyN30.78TiWekwwvIQWKgA6vLDOlj1MV2Qlj6iPuM-i-NPIcA",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "subcategoryName",
+											"value": "shirt",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "subcategoryImage",
+											"type": "file",
+											"src": "/C:/Users/pande/Downloads/shirt.png"
+										},
+										{
+											"key": "",
+											"value": "",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:3004/api/admin/update-sub-category/6371fa72428c88811d20c01a",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3004",
+									"path": [
+										"api",
+										"admin",
+										"update-sub-category",
+										"6371fa72428c88811d20c01a"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "create-sub-category",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzNzhiNjcwMDk0OWMzZmZhYTkwYjYyNiIsImlhdCI6MTY2ODg1NjAyN30.78TiWekwwvIQWKgA6vLDOlj1MV2Qlj6iPuM-i-NPIcA",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "subcategoryName",
+											"value": "shirt",
+											"type": "text"
+										},
+										{
+											"key": "subcategoryImage",
+											"type": "file",
+											"src": "/C:/Users/pande/Downloads/shirt.png"
+										},
+										{
+											"key": "categoryId",
+											"value": "636170c2d5be7a47fb11df66",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:3004/api/admin/sub-category-create",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3004",
+									"path": [
+										"api",
+										"admin",
+										"sub-category-create"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete-sub-category",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzNzhiNjcwMDk0OWMzZmZhYTkwYjYyNiIsImlhdCI6MTY2ODg1NjAyN30.78TiWekwwvIQWKgA6vLDOlj1MV2Qlj6iPuM-i-NPIcA",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "subcategoryName",
+											"value": "shirt",
+											"type": "text"
+										},
+										{
+											"key": "subcategoryImage",
+											"type": "file",
+											"src": "/C:/Users/pande/Downloads/Home.jpg"
+										},
+										{
+											"key": "",
+											"value": "",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:3004/api/admin/delete-sub-category/636a9ca2f4f9558fd791cc93",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3004",
+									"path": [
+										"api",
+										"admin",
+										"delete-sub-category",
+										"636a9ca2f4f9558fd791cc93"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "feedback",
+					"item": [
+						{
+							"name": "profile Copy",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzNzhiNjcwMDk0OWMzZmZhYTkwYjYyNiIsImlhdCI6MTY2ODg1NjAyN30.78TiWekwwvIQWKgA6vLDOlj1MV2Qlj6iPuM-i-NPIcA",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:3004/api/admin/all-feedback",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3004",
+									"path": [
+										"api",
+										"admin",
+										"all-feedback"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "developer",
+					"item": [
+						{
+							"name": "devloper",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzN2NlMmRhMzgyMjM5MTk3NTBhNGI2NiIsImlhdCI6MTY2OTE4MTE2NH0.YI0cOvQV6auBvIOcRguJkKTPyYdJBQD4dT2Vp8UP9VQ",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "Aman kumar pandey",
+											"type": "text"
+										},
+										{
+											"key": "role",
+											"value": "Full-Stack Developer",
+											"type": "text"
+										},
+										{
+											"key": "experience",
+											"value": "2 year",
+											"type": "text"
+										},
+										{
+											"key": "description",
+											"value": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam odit hic odio?\n",
+											"type": "text"
+										},
+										{
+											"key": "linkedIn",
+											"value": "https://www.linkedin.com/in/aman-k-pandey/",
+											"type": "text"
+										},
+										{
+											"key": "instagram",
+											"value": "",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "image",
+											"value": "",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:3004/api/admin/developer",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3004",
+									"path": [
+										"api",
+										"admin",
+										"developer"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "update developer",
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzN2NlMmRhMzgyMjM5MTk3NTBhNGI2NiIsImlhdCI6MTY2OTE4MTE2NH0.YI0cOvQV6auBvIOcRguJkKTPyYdJBQD4dT2Vp8UP9VQ",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "Aman kumar pandey",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "role",
+											"value": "Full-Stack Developer",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "experience",
+											"value": "2 year",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "description",
+											"value": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam odit hic odio?\n",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "linkedIn",
+											"value": "https://www.linkedin.com/in/aman-k-pandey/",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "instagram",
+											"value": "",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "image",
+											"type": "file",
+											"src": "/C:/Users/pande/Downloads/748854.jpg"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:3004/api/admin/update-developer/638202ec83f9a7fc7f1b3065",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3004",
+									"path": [
+										"api",
+										"admin",
+										"update-developer",
+										"638202ec83f9a7fc7f1b3065"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete developer",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzN2NlMmRhMzgyMjM5MTk3NTBhNGI2NiIsImlhdCI6MTY2OTE4MTE2NH0.YI0cOvQV6auBvIOcRguJkKTPyYdJBQD4dT2Vp8UP9VQ",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "Aman kumar pandey",
+											"type": "text"
+										},
+										{
+											"key": "role",
+											"value": "Full-Stack Developer",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "experience",
+											"value": "2 year",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "description",
+											"value": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam odit hic odio?\n",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "linkedIn",
+											"value": "https://www.linkedin.com/in/aman-k-pandey/",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "instagram",
+											"value": "",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "image",
+											"type": "file",
+											"src": "/C:/Users/pande/Downloads/748854.jpg",
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:3004/api/admin/delete-developer/63821044cfd086d301fa84b6",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3004",
+									"path": [
+										"api",
+										"admin",
+										"delete-developer",
+										"63821044cfd086d301fa84b6"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "update-admin-data-with-token",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzNzhiNjcwMDk0OWMzZmZhYTkwYjYyNiIsImlhdCI6MTY2ODg1NjAyN30.78TiWekwwvIQWKgA6vLDOlj1MV2Qlj6iPuM-i-NPIcA",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "mobileNumber",
+									"value": "7894561237",
+									"type": "text"
+								},
+								{
+									"key": "address",
+									"value": "vlihsdfv khxcgja",
+									"type": "text"
+								},
+								{
+									"key": "gender",
+									"value": "female",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "Aman kumar pandey",
+									"type": "text"
+								},
+								{
+									"key": "profilePicture",
+									"type": "file",
+									"src": "/C:/Users/pande/Downloads/1000030.jpg",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3004/api/admin/admin-update",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3004",
+							"path": [
+								"api",
+								"admin",
+								"admin-update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "password-update",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzNzhiNjcwMDk0OWMzZmZhYTkwYjYyNiIsImlhdCI6MTY2ODg1NjAyN30.78TiWekwwvIQWKgA6vLDOlj1MV2Qlj6iPuM-i-NPIcA",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": " { \"currentPassword\":\"Aman@123\",\r\n  \"newPassword\":\"123456\",\r\n   \"confirmPassword\":\"123456\" }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3004/api/admin/password-update",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3004",
+							"path": [
+								"api",
+								"admin",
+								"password-update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "admin-register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Microcom-Owner",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "microcombusiness@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "12345",
+									"type": "text"
+								},
+								{
+									"key": "mobileNumber",
+									"value": "9993935261",
+									"type": "text"
+								},
+								{
+									"key": "address",
+									"value": "S-865 Nehru Nagar Bhopal",
+									"type": "text"
+								},
+								{
+									"key": "gender",
+									"value": "male",
+									"type": "text"
+								},
+								{
+									"key": "profilePicture",
+									"type": "file",
+									"src": "/C:/Users/pande/Downloads/929813.png"
+								},
+								{
+									"key": "role",
+									"value": "admin",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "state",
+									"value": "Madhaya Pradesh",
+									"type": "text"
+								},
+								{
+									"key": "city",
+									"value": "Bhopal",
+									"type": "text"
+								},
+								{
+									"key": "pincode",
+									"value": "462003",
+									"type": "text"
+								},
+								{
+									"key": "gender",
+									"value": "male",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "aadharCardNo",
+									"value": "123456789235",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3004/api/admin-register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3004",
+							"path": [
+								"api",
+								"admin-register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "admin-login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "aman9993935261@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123456",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3004/api/user/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3004",
+							"path": [
+								"api",
+								"user",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "reset password",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzNTQ0NzMyMjlkNTI3M2IzYWYxNWQ5ZiIsImlhdCI6MTY2NjU0OTkwOH0.2F0kIDyZ08Oqj5VHf0uAqXmAwBVWvCLSwSI0qaw9ejk",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": " { \"email\":\"pandeyaman997@gmail.com\" }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3004/api/admin/forget-password",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3004",
+							"path": [
+								"api",
+								"admin",
+								"forget-password"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "profile",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzNzhiNjcwMDk0OWMzZmZhYTkwYjYyNiIsImlhdCI6MTY2ODg1NjAyN30.78TiWekwwvIQWKgA6vLDOlj1MV2Qlj6iPuM-i-NPIcA",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3004/api/admin/profile",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3004",
+							"path": [
+								"api",
+								"admin",
+								"profile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzNTQ0NzMyMjlkNTI3M2IzYWYxNWQ5ZiIsImlhdCI6MTY2NjU0OTkwOH0.2F0kIDyZ08Oqj5VHf0uAqXmAwBVWvCLSwSI0qaw9ejk",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "USER",
+			"item": [
+				{
+					"name": "product",
+					"item": [
+						{
+							"name": "New Request",
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "developer",
+					"item": [
+						{
+							"name": "all developer",
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "category",
+					"item": [
+						{
+							"name": "create-feedback",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzNjUwNWU0MTI4MzFkZDQ0Mjg2MDdiMSIsImlhdCI6MTY2ODM1NDc4MH0.PeF9jV-Tt5lC9FZ0eGn06qVLBNgl9kKsj0CJCF-ZWL0",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n     \"comment\":\"UI is not good \",\r\n      \"rating\":2 ,\r\n      \"suggestions\":\"Please change the ui design\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3004/api/user/create-feedback",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3004",
+									"path": [
+										"api",
+										"user",
+										"create-feedback"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "New Request",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3004/api/user/all-category",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3004",
+									"path": [
+										"api",
+										"user",
+										"all-category"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "business -user -view",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzODI1NWVkYjJkYmI4NTM1OWZlMDAwNyIsImlhdCI6MTY2OTU3OTEwMn0.Pc2LBaNZ32Mv0bYIPeiQcE-3GlVpZ8hxFZQt0jn3kYM\n",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "aman9993935261@gmail.com",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "password",
+									"value": "123456",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3004/api/business/user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3004",
+							"path": [
+								"api",
+								"business",
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "user-single-view",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzN2QwMjQ3NjFkZWVjZGYyZTBjZTdkMCIsImlhdCI6MTY2OTU1ODUyMn0.6V7tPsxdyU9cqJyHIXH3z-PfpW0YoEitOfyuC4ZFR2Q",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "aman9993935261@gmail.com",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "password",
+									"value": "123456",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3004/api/user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3004",
+							"path": [
+								"api",
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update-user-password",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzN2QwMjQ3NjFkZWVjZGYyZTBjZTdkMCIsImlhdCI6MTY2OTU1ODUyMn0.6V7tPsxdyU9cqJyHIXH3z-PfpW0YoEitOfyuC4ZFR2Q",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": " { \"currentPassword\":\"12345\",\r\n  \"newPassword\":\"123456\",\r\n   \"confirmPassword\":\"123456\" }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3004/api/user/update-password",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3004",
+							"path": [
+								"api",
+								"user",
+								"update-password"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "user-single-view Copy",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzNjUwNWU0MTI4MzFkZDQ0Mjg2MDdiMSIsImlhdCI6MTY2ODM1NDc4MH0.PeF9jV-Tt5lC9FZ0eGn06qVLBNgl9kKsj0CJCF-ZWL0",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \"currentPassword\":\"12345\",\r\n \"newPassword\":\"123456\",\r\n  \"confirmPassword\":\"123456\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3004/api/user/password-change",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3004",
+							"path": [
+								"api",
+								"user",
+								"password-change"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "register-user",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Aman kumar",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "pandeyaman997@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123456",
+									"type": "text"
+								},
+								{
+									"key": "mobileNumber",
+									"value": "9993935261",
+									"type": "text"
+								},
+								{
+									"key": "address",
+									"value": "S-865 Nehru Nagar Bhopal",
+									"type": "text"
+								},
+								{
+									"key": "gender",
+									"value": "male",
+									"type": "text"
+								},
+								{
+									"key": "profilePicture",
+									"type": "file",
+									"src": "/C:/Users/pande/Downloads/IMG_20220303_104236 (2).jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3004/api/admin/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3004",
+							"path": [
+								"api",
+								"admin",
+								"register"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Business",
+			"item": [
+				{
+					"name": "product",
+					"item": [
+						{
+							"name": "product add",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzODI1NWVkYjJkYmI4NTM1OWZlMDAwNyIsImlhdCI6MTY2OTQ4NjA2MX0.7DaNgNcj32W9WVCwxBOFHpYvKCalHGT8ICn1tpOi3Bc",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "productName",
+											"value": "Blue shirt",
+											"type": "text"
+										},
+										{
+											"key": "categoryId",
+											"value": "638247707c4d100567eb4084",
+											"type": "text"
+										},
+										{
+											"key": "subcategoryId",
+											"value": "63824b884f9f400fe26ef258",
+											"type": "text"
+										},
+										{
+											"key": "productImage",
+											"type": "file",
+											"src": "/C:/Users/pande/Downloads/shirt.png"
+										},
+										{
+											"key": "productType",
+											"value": "men",
+											"type": "text"
+										},
+										{
+											"key": "price",
+											"value": "200",
+											"type": "text"
+										},
+										{
+											"key": "productRating",
+											"value": "5",
+											"type": "text"
+										},
+										{
+											"key": "size",
+											"value": "XL",
+											"type": "text"
+										},
+										{
+											"key": "quantity",
+											"value": "5",
+											"type": "text"
+										},
+										{
+											"key": "color",
+											"value": "Blue",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:3004/api/business/add-product/63825624b2dbb85359fe000d",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3004",
+									"path": [
+										"api",
+										"business",
+										"add-product",
+										"63825624b2dbb85359fe000d"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "product add Copy",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzODI1NWVkYjJkYmI4NTM1OWZlMDAwNyIsImlhdCI6MTY2OTQ4NjA2MX0.7DaNgNcj32W9WVCwxBOFHpYvKCalHGT8ICn1tpOi3Bc",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "productName",
+											"value": "Blue shirt",
+											"type": "text"
+										},
+										{
+											"key": "categoryId",
+											"value": "638247707c4d100567eb4084",
+											"type": "text"
+										},
+										{
+											"key": "subcategoryId",
+											"value": "63824b884f9f400fe26ef258",
+											"type": "text"
+										},
+										{
+											"key": "productImage",
+											"type": "file",
+											"src": "/C:/Users/pande/Downloads/shirt.png"
+										},
+										{
+											"key": "productType",
+											"value": "men",
+											"type": "text"
+										},
+										{
+											"key": "price",
+											"value": "200",
+											"type": "text"
+										},
+										{
+											"key": "productRating",
+											"value": "5",
+											"type": "text"
+										},
+										{
+											"key": "size",
+											"value": "XL",
+											"type": "text"
+										},
+										{
+											"key": "quantity",
+											"value": "5",
+											"type": "text"
+										},
+										{
+											"key": "color",
+											"value": "Blue",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:3004/api/business/add-product/63825624b2dbb85359fe000d",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3004",
+									"path": [
+										"api",
+										"business",
+										"add-product",
+										"63825624b2dbb85359fe000d"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "all-product-view",
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Create Business",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzNzhiZjhiYWU1YTk1NjI3NTY4NTNiYiIsImlhdCI6MTY2ODg1NzczOX0.oEvzFRtalHC1diPan8pRvkoc73GPYVheJUjksruCsC4",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "businessName",
+									"value": "chalne wala business",
+									"type": "text"
+								},
+								{
+									"key": "businessType",
+									"value": "delivery",
+									"type": "text"
+								},
+								{
+									"key": "state",
+									"value": "madhaya pradesh",
+									"type": "text"
+								},
+								{
+									"key": "address",
+									"value": "Nehru nagar",
+									"type": "text"
+								},
+								{
+									"key": "city",
+									"value": "Bhopal",
+									"type": "text"
+								},
+								{
+									"key": "pin",
+									"value": "462003",
+									"type": "text"
+								},
+								{
+									"key": "mobileNumber",
+									"value": "9993935261",
+									"type": "text"
+								},
+								{
+									"key": "gstNo",
+									"value": "SKDHHB78527ghj",
+									"type": "text"
+								},
+								{
+									"key": "panNo",
+									"value": "JSDH64ghj",
+									"type": "text"
+								},
+								{
+									"key": "shopLogo",
+									"type": "file",
+									"src": "/C:/Users/pande/Downloads/929813.png"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3004/api/business/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3004",
+							"path": [
+								"api",
+								"business",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update Business",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzNzhiZjhiYWU1YTk1NjI3NTY4NTNiYiIsImlhdCI6MTY2ODg2NDI2OX0.zgpQaO9FBa60jPO1aLPqWxlhcqzLQ_sUciK0uLSTRoc",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "businessName",
+									"value": "dry fruits",
+									"type": "text"
+								},
+								{
+									"key": "businessType",
+									"value": "shop",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "state",
+									"value": "madhaya pradesh",
+									"type": "text"
+								},
+								{
+									"key": "address",
+									"value": "Nehru nagar",
+									"type": "text"
+								},
+								{
+									"key": "city",
+									"value": "Bhopal",
+									"type": "text"
+								},
+								{
+									"key": "pin",
+									"value": "462003",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "mobileNumber",
+									"value": "9993935261",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "gstNo",
+									"value": "SKDHHB78527",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "panNo",
+									"value": "JSDH64",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "shopLogo",
+									"type": "file",
+									"src": "/C:/Users/pande/Downloads/deign.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3004/api/business/update/6378d0d36d0404aa6d8c9b3b",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3004",
+							"path": [
+								"api",
+								"business",
+								"update",
+								"6378d0d36d0404aa6d8c9b3b"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "single Business view",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzODI1NWVkYjJkYmI4NTM1OWZlMDAwNyIsImlhdCI6MTY2OTQ4NzkwM30.Xc_eOpwq0PUtv8QjUT5htCI45nuCm_iwhS1X-d2LtzM",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3004/api/business",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3004",
+							"path": [
+								"api",
+								"business"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "single Business view Copy",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzODI1ZjgzZTJlNDM3MGViMmJiZjMzNCIsImlhdCI6MTY2OTQ5MDYyN30.ada319LHgzWGqQ-SP4FQpsYa6ZS3THU5XxeGlTUJTQA",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3004/api/business/user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3004",
+							"path": [
+								"api",
+								"business",
+								"user"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "user-register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Microcom-Owner",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "microcombusiness@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "12345",
+							"type": "text"
+						},
+						{
+							"key": "mobileNumber",
+							"value": "9993935261",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "S-865 Nehru Nagar Bhopal",
+							"type": "text"
+						},
+						{
+							"key": "gender",
+							"value": "male",
+							"type": "text"
+						},
+						{
+							"key": "profilePicture",
+							"type": "file",
+							"src": "/C:/Users/pande/Downloads/929813.png"
+						},
+						{
+							"key": "role",
+							"value": "admin",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "state",
+							"value": "Madhaya Pradesh",
+							"type": "text"
+						},
+						{
+							"key": "city",
+							"value": "Bhopal",
+							"type": "text"
+						},
+						{
+							"key": "pincode",
+							"value": "462003",
+							"type": "text"
+						},
+						{
+							"key": "gender",
+							"value": "male",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "aadharCardNo",
+							"value": "123456789235",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3004/api/admin-register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3004",
+					"path": [
+						"api",
+						"admin-register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "password-update Copy",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzNzhiNjcwMDk0OWMzZmZhYTkwYjYyNiIsImlhdCI6MTY2ODg1NjAyN30.78TiWekwwvIQWKgA6vLDOlj1MV2Qlj6iPuM-i-NPIcA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": " { \"currentPassword\":\"Aman@123\",\r\n  \"newPassword\":\"123456\",\r\n   \"confirmPassword\":\"123456\" }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3004/api/admin/password-update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3004",
+					"path": [
+						"api",
+						"admin",
+						"password-update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "all developer",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzNzhiNjcwMDk0OWMzZmZhYTkwYjYyNiIsImlhdCI6MTY2ODg1NjAyN30.78TiWekwwvIQWKgA6vLDOlj1MV2Qlj6iPuM-i-NPIcA",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3004/api/admin/profile",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3004",
+					"path": [
+						"api",
+						"admin",
+						"profile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "profile Copy 2",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzNzhiNjcwMDk0OWMzZmZhYTkwYjYyNiIsImlhdCI6MTY2ODg1NjAyN30.78TiWekwwvIQWKgA6vLDOlj1MV2Qlj6iPuM-i-NPIcA",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3004/api/alldeveloper",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3004",
+					"path": [
+						"api",
+						"alldeveloper"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update-admin-data-with-token Copy",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzNzhiZjhiYWU1YTk1NjI3NTY4NTNiYiIsImlhdCI6MTY2ODg4NDcyMH0.MOKJ6a3j1Ca3O7OeYRyURP5lo37PFdhXzXJTk3lMbIA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "mobileNumber",
+							"value": "7894561237",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "vlihsdfv khxcgja",
+							"type": "text"
+						},
+						{
+							"key": "gender",
+							"value": "female",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "Aman kumar pandey",
+							"type": "text"
+						},
+						{
+							"key": "profilePicture",
+							"type": "file",
+							"src": "/C:/Users/pande/Downloads/1000030.jpg"
+						},
+						{
+							"key": "businessId",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3004/api/business/update-user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3004",
+					"path": [
+						"api",
+						"business",
+						"update-user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user-login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "aman9993935261@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3004/api/user/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3004",
+					"path": [
+						"api",
+						"user",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "business-login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "aman9993935261@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3004/api/user/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3004",
+					"path": [
+						"api",
+						"user",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "forget - password",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Aman kumar",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "aman9993935261@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "text"
+						},
+						{
+							"key": "mobileNumber",
+							"value": "9993935261",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "S-865 Nehru Nagar Bhopal",
+							"type": "text"
+						},
+						{
+							"key": "gender",
+							"value": "male",
+							"type": "text"
+						},
+						{
+							"key": "profilePicture",
+							"type": "file",
+							"src": "/C:/Users/pande/Downloads/IMG_20220303_104236 (2).jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3004/api/user/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3004",
+					"path": [
+						"api",
+						"user",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "reset-password",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \r\n    \"password\":\"123456\",\r\n     \"confirmPassword\":\"123456\" \r\n     } ",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3004/api/user/reset-password/636505e412831dd4428607b1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3004",
+					"path": [
+						"api",
+						"user",
+						"reset-password",
+						"636505e412831dd4428607b1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

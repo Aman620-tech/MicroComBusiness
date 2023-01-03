@@ -1,0 +1,32 @@
+.payment_group {
+  margin: 0px 3px 60px 268px;
+  display: flex;
+  /* justify-content: center; */
+  /* border: 1px solid grey; */
+  /* for straight view */
+  flex-wrap: wrap;
+  /*  for reverse view */
+  /* flex-wrap: wrap-reverse; */
+  /* content adjust according to page */
+  overflow: auto;
+
+  width: 80vw;
+}
+
+.payment {
+  margin: 0px 0px 0px 0px;
+}
+
+.graph_view {
+  display: flex;
+}
+.graph {
+  height: 267px;
+  width: 504px;
+
+  margin: 14px 32px 6px 65px;
+}
+
+.table_body {
+  margin: 26px 54px 60px 268px;
+}
